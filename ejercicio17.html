@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 17 - Gestor de Tareas</title>
-    <!-- SweetAlert2 para la confirmación de eliminación -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- SweetAlert2 para el modal de confirmación -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/ejercicio17.js" defer></script>
 </head>
 <body>
-    <h1>Gestor de Tareas Pendientes</h1>
-    <div>
-        <label for="tareaEn">Nueva Tarea:</label>
-        <input type="text" id="tareaEn" placeholder="Ej. Ejercicios Program web">
+    <div class="contenedor">
+        <h1>Gestión de Tareas Pendientes</h1>
+        <div>
+            <label for="tareaEn">Nueva Tarea:</label>
+            <input type="text" id="tareaEn" placeholder="Ej. Estudiar closures">
+        </div>
         <button id="btnAgregar">Agregar Tarea</button>
+        <h2>Tareas Registradas</h2>
+        <ul id="listaTareas"></ul>
+        <p>Regresa al índice principal <a href="./index.html">Índice Principal</a>.</p>
     </div>
-    <br>
-    <h2>Tareas Registradas</h2>
-    <ul id="listaTareas"></ul>
-    <br>
-    <p>Regresa al índice principal: <a href="./index.html">Índice Principal</a>.</p>
 </body>
 </html>
