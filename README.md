@@ -5,7 +5,7 @@ Este repositorio contiene la recopilación de 18 ejercicios prácticos desarroll
 
 ## Estructura del Repositorio
 - `index.html`: Página principal que funciona como menú de navegación hacia todos los ejercicios.
-- `ejercicio1.html` a `ejercicio10.html` funcional (momentaneamente, hasta que se suban los 10 ejercicios): Archivos individuales de cada práctica.
+- `ejercicio1.html` a `ejercicio10.html` funcional (momentaneamente, hasta que se suban los otros 8 ejercicios): Archivos individuales de cada práctica.
 - `/css`: Hojas de estilo utilizadas en las prácticas.
 - `/js`: Scripts de interacción y lógica en JavaScript.
 - `/img`: Recursos multimedia e imágenes empleadas.
@@ -24,3 +24,4 @@ El proyecto se encuentra desplegado y accesible públicamente a través de GitHu
 * **Ejercicio 8 - Tablas Complejas y Horarios:** Construcción de una tabla académica avanzada con `<table>`, `<thead>`, `<tbody>`, celdas de encabezado (`<th>`) y combinación de filas y columnas mediante `rowspan` y `colspan`, vinculada a estilos CSS externos.
 * **Ejercicio 9 - Formulario de Contacto:** Diseño de un formulario web estructurado (`<form>`) con campos de captura para texto, correo electrónico (`type="email"`), teléfono (`type="tel"`), área de texto (`<textarea>`) y botón de envío, enlazado a estilos externos y Google Fonts.
 * **Ejercicio 10 - Interactividad con JavaScript (Conversor de Temperatura):** Integración de lógica del lado del cliente mediante un archivo externo `.js`, capturando la entrada de grados Celsius desde un `input`, procesando la conversión con una función al pulsar un botón y mostrando el resultado en un campo de solo lectura (`readonly`).
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Calculadora con Funciones Flecha de CDN</title>
+    <!-- Inclusión del CDN de SweetAlert2 para las alertas modales -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/ejercicio16.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora de Operaciones Básicas</h1>
+
+    <div>
+        <label for="numero1">Número 1:</label>
+        <input type="text" id="numero1" placeholder="Ej. 12">
+    </div>
+    <br>
+    <div>
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2" placeholder="Ej. 4">
+    </div>
+    <br>
+    <div>
+        <button onclick="calcularOperacion('suma')">Sumar (+)</button>
+        <button onclick="calcularOperacion('resta')">Restar (-)</button>
+        <button onclick="calcularOperacion('multiplicacion')">Multiplicar (×)</button>
+        <button onclick="calcularOperacion('division')">Dividir (÷)</button>
+    </div>
+    <br>
+    <div>
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" readonly placeholder="Resultado">
+    </div>
+    <br>
+    <p>Regresa al índice principal: <a href="./index.html">Índice Principal</a>.</p>
+</body>
+</html>

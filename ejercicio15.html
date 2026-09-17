@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Registro de Estudiantes</title>
+    <script src="./js/ejercicio15.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Calificaciones de Estudiantes</h1>
+
+    <div>
+        <label for="nombre">Nombre del estudiante:</label>
+        <input type="text" id="nombre" placeholder="Ej. Juan">
+    </div>
+    <br>
+    <div>
+        <label for="calificacion">Calificación:</label>
+        <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100" step="any">
+    </div>
+    <br>
+    <button onclick="agregarEstudiante()">Agregar estudiante</button>
+    <button onclick="calcularResultados()">Calcular</button>
+
+    <br><br>
+    <p id="totalRegistrados">Estudiantes agregados: 0</p>
+
+    <div>
+        <label for="promedio">Calificación promedio:</label>
+        <input type="text" id="promedio" readonly placeholder="Promedio">
+    </div>
+    <br>
+    <div>
+        <label for="mayor">Estudiante con mayor calificación:</label>
+        <input type="text" id="mayor" readonly placeholder="Mejor calificado">
+    </div>
+    <br>
+    <div>
+        <label for="menor">Estudiante con menor calificación:</label>
+        <input type="text" id="menor" readonly placeholder="Menor calificado">
+    </div>
+
+    <br>
+    <p>Regresa al índice principal: <a href="./index.html">Índice Principal</a>.</p>
+</body>
+</html>

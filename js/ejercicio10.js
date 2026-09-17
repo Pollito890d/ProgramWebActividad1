@@ -2,8 +2,8 @@ function convertidor() {
     var cel=document.getElementById('cel').value;
     var resultado=document.getElementById("resultado");
     // Validación para verificar que no este vacío y que sea numérico
-    if(cel.trim()===""){
-        alert("Por favor ingresa un valor numerico valido");
+    if(cel.trim()===""|| isNaN(celInput)){
+        alert("Por favor ingresa un valor númerico valido");
         resultado.value="";
         return;
     }
