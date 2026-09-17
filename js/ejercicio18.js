@@ -20,7 +20,7 @@ function agregarElemento() {
         });
         li.appendChild(botonEliminar);
         lista.appendChild(li);
-        // Limpieza y enfoque del input
+        // Limpieza
         entrada.value = '';
         entrada.focus();
     } else {
