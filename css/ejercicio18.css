@@ -1,0 +1,45 @@
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Área de scroll para cuando la lista crezca mucho */
+#lista {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+#lista .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.15s ease;
+    word-break: break-word;
+}
+
+#lista .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+#lista .list-group-item .btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    margin-left: 0.5rem;
+}
+
+/* Efecto hover al enlace de regreso */
+a.text-secondary {
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+a.text-secondary:hover {
+    color: var(--bs-primary) !important;
+    text-decoration: underline !important;
+}

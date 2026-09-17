@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0fdfa;
+    color: #134e4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #0f766e;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    gap: 6px;
+}
+
+label {
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
+    border: 1.5px solid #99f6e4;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #0d9488;
+}
+
+input[readonly] {
+    background-color: #ccfbf1;
+    color: #115e59;
+    cursor: default;
+}
+
+#totalRegistrados {
+    margin: 6px 0;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #0f766e;
+    text-align: center;
+}
+
+button {
+    width: 290px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0f766e;
+}
+
+/* Estilo distintivo para el segundo botón de calcular */
+button:nth-of-type(2) {
+    background-color: #115e59;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #042f2e;
+}
+
+a {
+    color: #0d9488;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
