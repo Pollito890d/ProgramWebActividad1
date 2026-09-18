@@ -38,7 +38,6 @@ h1{
 .horario tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-
 /*Clases especiales*/
 .laboratiorio {
     background-color: #e3f2fd;
