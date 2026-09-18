@@ -1,16 +1,67 @@
-.card {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+.contenedor:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Área de scroll para cuando la lista crezca mucho */
+h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #0d6efd;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #495057;
+}
+
+#agregarBtn {
+    width: 100%;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* Barra de scroll para cuando la lista crezca */
 #lista {
-    max-height: 320px;
+    max-height: 280px;
     overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 #lista .list-group-item {
@@ -20,6 +71,8 @@
     padding: 0.75rem 1rem;
     transition: background-color 0.15s ease;
     word-break: break-word;
+    border-radius: 6px;
+    margin-bottom: 6px;
 }
 
 #lista .list-group-item:hover {
@@ -33,13 +86,22 @@
     margin-left: 0.5rem;
 }
 
-/* Efecto hover al enlace de regreso */
-a.text-secondary {
-    font-size: 0.95rem;
+/* Enlace inferior de regreso */
+p {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #6c757d;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 
-a.text-secondary:hover {
-    color: var(--bs-primary) !important;
-    text-decoration: underline !important;
+a:hover {
+    text-decoration: underline;
 }
